@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="greybox">
+      <!-- Rating state start -->
+      <div class="show">
+        <div class="star">
+          <img src="images/icon-star.svg" alt="star">
+        </div>
+
+        <div class="text">
+            <h1>How did we do?</h1>
+        
+          <h3>Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!</h3>
+        </div>
+
+        <div class="ratings">
+          <input type="radio" class="rate-btn" id="rate1" name="radio-rating" value="1">
+            <label class="rate" for="rate1">1</label>
+          <input type="radio" class="rate-btn" id="rate2" name="radio-rating" value="2">
+            <label class="rate" for="rate2">2</label>
+          <input type="radio" class="rate-btn" id="rate3" name="radio-rating" value="3">
+            <label class="rate" for="rate3">3</label>
+          <input type="radio" class="rate-btn" id="rate4" name="radio-rating" value="4">
+            <label class="rate" for="rate4">4</label>
+          <input type="radio" class="rate-btn" id="rate5" name="radio-rating" value="5">
+            <label class="rate" for="rate5">5</label>
+        </div>
+      
+        <button type="submit" class="btn" onclick="showRating()" >SUBMIT</button>
+
+      </div>
+    
+      <!-- Rating state end -->
+
+      <div class="hidden">
+        <!-- Thank you state start -->
+        
+        <div class="thank">
+          <img src="images/illustration-thank-you.svg" alt="illustration-thank-you">
+        </div>
+    
+        <div class="text-2">
+    
+          <div class="bubble">
+            <h2>You selected <!-- Add rating here --><span class="rate-value"></span> out of 5</h2>
+          </div>
+    
+          <h1>Thank you!</h1>
+      
+          <h3>We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</h3>
+      
+          <!-- Thank you state end -->
+        </div>
+      </div>
+  </div>
+    
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
